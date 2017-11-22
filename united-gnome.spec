@@ -1,11 +1,11 @@
-%global gitdate 20171026
-%global commit0 51e76e031e614b0c22d6e0eaacba855c58b8daec
+%global gitdate 20171122
+%global commit0 bfb20eb828f489e863d3f2c7877c1a1e5fc737ee
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:           united-gnome
 Version:        2.2
-Release:        2%{gver}%{dist}
+Release:        3%{gver}%{dist}
 Summary:        GTK2/3 + GNOME Shell theme based on a Unity 8 design concept.
 
 License:        GPLv3
@@ -265,6 +265,9 @@ cp -pr United-Light/ United/ United-Dark/ United-Darker/  %{buildroot}%{_datadir
 
 
 %changelog
+
+* Wed Nov 22 2017 David Vásquez <davidva AT tutanota DOT com> 2.2-3.gitbfb20eb
+- Updated to 2.2-3.gitbfb20eb
 
 * Thu Oct 26 2017 David Vásquez <davidva AT tutanota DOT com> 2.2-2.git51e76e0
 - Updated to 2.2-2.git51e76e0
